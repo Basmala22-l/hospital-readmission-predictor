@@ -9,7 +9,7 @@ st.set_page_config(page_title="30-Day Readmission Risk", page_icon="🏥", layou
 
 @st.cache_resource
 def load_artifact():
-    return joblib.load("readmission_model.joblib")
+    return joblib.load("readmission-app/readmission_model.joblib")
 
 
 art = load_artifact()
